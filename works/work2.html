@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float and Clear Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eee;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #ddd;
+      padding: 20px;
+      border: 2px solid black;
+      width: 45%;
+    }
+
+    .non-float .red-box,
+    .float-left .red-box {
+      background-color: red;
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      width: 120px;
+    }
+
+    .float-left .red-box {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS FLOAT and CLEAR</h2>
+
+  <div class="container">
+    
+    <div class="box non-float">
+      <div class="red-box">Non floating</div>
+      <p>
+        Se de amet nulla nulla aut tempor se magna nostrud non expetendis culpa cernantur deserunt, legam ut nescius ab veniam. 
+        Cernantur ab culpa de labore domesticarum probant dolor excepteur aut commodo noster labore.
+      </p>
+    </div>
+
+    
+    <div class="box float-left clearfix">
+      <div class="red-box">Left floating</div>
+      <p>
+        Se de amet nulla nulla aut tempor se magna nostrud non expetendis culpa cernantur deserunt, legam ut nescius ab veniam. 
+        Cernantur ab culpa de labore domesticarum probant dolor excepteur aut commodo noster labore an fugiat se senserit ad culpa pariatur.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+img.slide{
+    height: 700px;
+}
+
+.profile-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover{
+    transform: scale(1.1);
+}
+
+.modal-profile-pic{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-shadow: 0px 4px 10px black;
+}
